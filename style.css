@@ -1,0 +1,330 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 2em;
+  padding: 0;
+  background-color: #fff;
+  font-size: 1em;
+}
+
+header {
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 20px;
+    border: 0.1em dashed #fff;
+}
+
+.topimg {
+    float: right;
+    padding: 10px;
+    margin: 12px 20px;
+}
+
+
+nav,
+article,
+p,
+aside,
+footer,
+div {
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border: 0.1em dashed #fff;
+}
+
+.menu {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 4em;
+    padding: 5px 5px 5px 5px;
+    background-color: #fff;
+}
+
+.menu:hover {
+    background-color: #8A73AD;
+    text-decoration: line-through;
+}
+
+* {box-sizing:border-box}
+body {font-family: 'Source Sans Pro', sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: black;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: black;
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    padding: 13px 12px;
+    position: absolute;
+    margin: 20px 0 0 3px;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 5s ease;
+}
+
+.active {
+    background-color: #717171;
+    
+}
+
+.active:hover {
+    text-decoration: line-through;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+<style>
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana,sans-serif;}
+
+.month {
+    padding: 10px 0;
+    width: 100%;
+    margin: 0;
+    background: #8A73AD;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: grey;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+.left {
+    float: left;
+    width: 50%;
+    font-size: 20px;
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+
+.box-1 {
+    background-color: #eee; 
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.events {
+    background-color: #8A73AD;
+    width: 15%;
+    height: 100px;
+    float: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 45px 0 0 10px;
+    padding: 25px;
+}
+
+.things-1 {
+    float: right;
+    width: 80%;
+    background-color: #ddd;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    height: 100px;
+    margin: 45px 15px 0 10px;
+    padding: 35px ;
+}
+
+footer {
+    height: 50px;
+    margin: 50px 0 30px 0;
+}
+.col-1-2 {
+    width: 50%;
+    padding-left: 15px;
+  padding-right: 15px;
+}
+
+.leftmuseumes {
+    float: left;
+}
+
+.rightmuseums {
+    float: right;
+}
+
+.footer {
+    padding: 10px;
+    float: right;
+}
+
+
+
+.bottomimg {
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 10px;
+}
+
+
+
+.list {
+    text-align: left;
+    
+}
+
+.things-2 {
+    float: right;
+    width: 80%;
+    background-color: #ddd;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    height: 250px;
+    margin: 45px 15px 0 10px;
+    padding: 35px;
+}
+
+.box-2 {
+    background-color: #eee; 
+    height: 345px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.events-2 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.museums {
+    color: #8A73AD;
+    float: right;
+}
+
+.museums:hover {
+    background-color: antiquewhite;
+    text-decoration: underline;
+    color: purple;
+}

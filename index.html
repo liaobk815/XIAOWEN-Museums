@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Art Museum in New York</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        
+    </head>
+    <body>
+        <img src="my-icons/icons.png" class="topimg" width="17%">
+        <header>Art Museum in New York</header>
+        <hr>
+        <a class="menu">Museums</a>
+        <a class="menu">Speical Days</a>
+        <a class="menu">Events</a>
+        <a class="menu">Contacts</a>
+        <hr>
+
+     <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="my-icons/metropolitan.jpg" style="width:100%">
+            <div class="text">Metropolitan Museum of Art</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="my-icons/moma.jpg" style="width:100%">
+            <div class="text">MoMA</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="my-icons/g.jpg" style="width:100%">
+            <div class="text">The Solomon R. Guggenheim Museum</div>
+        </div>
+
+    </div>
+         <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+
+       <script>
+           var slideIndex = 0;
+           showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex> slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 10 seconds
+            }
+        </script>
+        <br><br>
+        <div class="month">      
+            <ul>
+            <li class="prev">❮</li>
+            <li class="next">❯</li>
+            <li style="text-align:center">
+            January<br>
+            <span style="font-size:18px">2017</span>
+            </li>
+            </ul>
+        </div>
+        
+        <ul class="weekdays">
+            <li>Su</li>
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+        </ul>
+
+        <ul class="days">  
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li><span class="active">23</span></li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <div class="box-1">
+            <article class="events">TODAY'S<br>EVENTS</article>
+            <p class="things-1">ALL ART MUSEUMS CLOSE ON MONDAY</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="box-2">
+            <article class="events">UPCOMING<br>EVENTS</article>
+            <section class="things-2">
+                    <ul style="list-style-type:none" class="events-2">
+                        <li>John Singer Sargent’s Mrs. Carl Meyer and Her Children <a class="museums" href="http://www.tate.org.uk/art/artworks/sargent-mrs-carl-meyer-and-her-children-t12988" target="_blank">(@The Jewish Museum)</a></li>
+                        <br>
+                        <li>inHarlem <a class="museums" href="https://www.studiomuseum.org/" target="_blank">(@The Studio Museum in Harlem)</a></li>
+                        <br>
+                        <li>Nan Goldin: The Ballad of Sexual Dependency <a class="museums" href="https://www.moma.org/calendar/exhibitions/1651" target="_blank">(@MoMA)</a></li>
+                        <br>
+                        <li>Marilyn Minter: Pretty/Dirty <a class="museums" href="https://www.brooklynmuseum.org/exhibitions/marilyn_minter_pretty_dirty" target="_blank">(@Brooklyn Museum)</a></li>
+                    </ul>
+                    
+            </section>
+        </div>
+        
+        <footer>
+            <p class="footer">&copy; 2017 Art Museum in New York all rights reserved</p><img src="my-icons/iconsfooter.png" class="bottomimg" width="17%">
+        </footer>
+    </body>
+</html>
